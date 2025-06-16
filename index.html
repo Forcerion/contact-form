@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/light.css" />
+
+  <body class="main-body">
+    <main class="main-main">
+      <form class="form-content" action="#">
+        <h1 class="main-title">Contact Us</h1>
+        <div class="first-name-wrapper">
+          <label class="first-name" for="first-name"
+            >First Name <span class="stars">*</span>
+          </label>
+          <br />
+          <input
+            class="text-form-content"
+            type="text"
+            name="first-name"
+            id="first-name"
+            required
+          />
+        </div>
+        <div class="last-name-wrapper">
+          <label class="last-name" for="last-name"
+            >Last Name <span class="stars">*</span>
+          </label>
+          <br />
+          <input
+            class="text-form-content"
+            type="text"
+            name="last-name"
+            id="last-name"
+            required
+          />
+        </div>
+        <div class="email-wrapper">
+          <label class="email-address" for="email"
+            >Email Address <span class="stars">*</span>
+          </label>
+          <br />
+          <input
+            class="text-form-content"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <p class="title-radio">Query Type <span class="stars">*</span></p>
+        <fieldset class="radio-query-type">
+          <div class="radio-general-enquiry">
+            <input
+              type="radio"
+              id="general-enquiry"
+              name="radio"
+              value="general-enquiry "
+              checked
+            />
+            <label class="bruh" for="general-enquiry">General Enquiry</label>
+          </div>
+
+          <div class="radio-support-request">
+            <input
+              type="radio"
+              id="support-request"
+              name="radio"
+              value="support-request"
+            />
+            <label class="bruh" for="support-request">Support Request</label>
+          </div>
+        </fieldset>
+        <label class="message-text" for="message">Message <span class="stars">*</span></label>
+        <textarea class="text-area-form" id="message" rows="8" name="message"></textarea>
+        <fieldset class="checkbox-form">
+            <div class="checkbox-wrapper">
+              <input class="checkbox" type="checkbox" id="scales" name="scales" checked />
+              <label class="checkbox-infos" for="scales">I consent to being contacted by the team <span class="stars">*</span></label>
+            </div>
+          </fieldset>
+        <div class="form-submit">
+          <input class="buton-submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
